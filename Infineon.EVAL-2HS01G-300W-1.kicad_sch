@@ -1,0 +1,402 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "24a80974-3bf5-4964-b47f-ee6ba634a8bf")
+	(paper "A4")
+	(lib_symbols)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 45.72 44.45)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 7.62 2.54 2.54)
+		(cells
+			(table_cell "Specifications of EVAL-2HS01G-300W-1"
+				(exclude_from_sim no)
+				(at 25.4 165.1 0)
+				(size 90.17 2.54)
+				(margins 1 1 1 1)
+				(span 2 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(thickness 0.25)
+						(bold yes)
+					)
+					(justify left)
+				)
+				(uuid "28ed2baa-9f92-41a1-9a13-0373827c5dde")
+			)
+			(table_cell "rgb(240, 240, 240)"
+				(exclude_from_sim no)
+				(at 71.12 165.1 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 0 0)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "38cbbe17-7c55-4c9f-bd31-aa0bf980b154")
+			)
+			(table_cell "Nominal DC Input voltage"
+				(exclude_from_sim no)
+				(at 25.4 167.64 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "2f85e4d8-a9cd-438f-9acd-3ed1c4fbec54")
+			)
+			(table_cell "400 V_{DC}"
+				(exclude_from_sim no)
+				(at 71.12 167.64 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "9d5931f6-66b8-478d-a52d-f8041bb0bf4b")
+			)
+			(table_cell "Mains under voltage protection point "
+				(exclude_from_sim no)
+				(at 25.4 170.18 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "177b7329-786f-4b9d-b8ea-2e0842e55630")
+			)
+			(table_cell "368 V_{DC}"
+				(exclude_from_sim no)
+				(at 71.12 170.18 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "52e60d48-4229-406d-917f-97289a69b939")
+			)
+			(table_cell "Auxiliary power supply for IC V_{CC}"
+				(exclude_from_sim no)
+				(at 25.4 172.72 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "e12c0ef4-e090-4da7-9313-22d75feaac9c")
+			)
+			(table_cell "15 V_{DC}"
+				(exclude_from_sim no)
+				(at 71.12 172.72 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "5e5f66cb-c726-425c-9049-49f844dfbed0")
+			)
+			(table_cell "Nominal output full load"
+				(exclude_from_sim no)
+				(at 25.4 175.26 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "e12c0ef4-e090-4da7-9313-22d75feaac9c")
+			)
+			(table_cell "12 V / 25 A (300 W)"
+				(exclude_from_sim no)
+				(at 71.12 175.26 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "5e5f66cb-c726-425c-9049-49f844dfbed0")
+			)
+			(table_cell "Efficiency η"
+				(exclude_from_sim no)
+				(at 25.4 177.8 0)
+				(size 45.72 7.62)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "5e5f66cb-c726-425c-9049-49f844dfbed0")
+			)
+			(table_cell ">97% at 100% load \n>97% at 50% load \n~96% at 20% load\n"
+				(exclude_from_sim no)
+				(at 71.12 177.8 0)
+				(size 44.45 7.62)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "e12c0ef4-e090-4da7-9313-22d75feaac9c")
+			)
+			(table_cell "Switching frequency (Resonant frequency, f_{r})"
+				(exclude_from_sim no)
+				(at 25.4 185.42 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "e12c0ef4-e090-4da7-9313-22d75feaac9c")
+			)
+			(table_cell "85 kH_{Z} @ 12 V / 25 A and 400 V_{DC} input"
+				(exclude_from_sim no)
+				(at 71.12 185.42 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "5e5f66cb-c726-425c-9049-49f844dfbed0")
+			)
+			(table_cell "Form factor case size (L x W x H)"
+				(exclude_from_sim no)
+				(at 25.4 187.96 0)
+				(size 45.72 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+						(italic yes)
+					)
+					(justify left)
+				)
+				(uuid "5e5f66cb-c726-425c-9049-49f844dfbed0")
+			)
+			(table_cell "140 mm x 85 mm x 35 mm"
+				(exclude_from_sim no)
+				(at 71.12 187.96 0)
+				(size 44.45 2.54)
+				(margins 1 1 1 1)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+				(uuid "e12c0ef4-e090-4da7-9313-22d75feaac9c")
+			)
+		)
+	)
+	(sheet
+		(at 76.2 63.5)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7")
+		(property "Sheetname" "Power Circuit"
+			(at 76.2 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_circuit.kicad_sch"
+			(at 76.2 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 63.5)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fcbdd543-0282-4310-b62e-9d4090c6bf7b")
+		(property "Sheetname" "Control Circuit"
+			(at 165.1 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "control_circuit.kicad_sch"
+			(at 165.1 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
