@@ -14,10 +14,11 @@ Project is created using **KiCad** EDA.
 License
 -------
 
-Since this work aims to replicate a desing from _Infineon_ with intensions to
-allow anyone to use, modify and customize it without limitations other than to
-state the changes one made to the project and any sort of waranty from me, I
-have chosen to publish it under the [CERN Open Hardware Licence Version 2 - Permissive](https://choosealicense.com/licenses/cern-ohl-p-2.0/)
+Since this work aims to replicate a desing from _Infineon_ with clear
+intensions to allow anyone to use, modify and customize it without limitations
+other than to state the changes one made to the project and without any sort of
+waranty provided from me, I have chosen to publish it under the
+[CERN Open Hardware Licence Version 2 - Permissive](https://choosealicense.com/licenses/cern-ohl-p-2.0/)
 license.
 
 
