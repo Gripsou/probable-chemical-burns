@@ -447,8 +447,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "probable-chemical-burns"
+    ],
+    "pinned_symbol_libs": [
+      "probable-chemical-burns"
+    ]
   },
   "meta": {
     "filename": "Infineon.EVAL-2HS01G-300W-1.kicad_pro",
@@ -560,14 +564,26 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
