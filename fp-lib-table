@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "probable-chemical-burns")(type "KiCad")(uri "${KIPRJMOD}/probable-chemical-burns.pretty")(options "")(descr ""))
+)
