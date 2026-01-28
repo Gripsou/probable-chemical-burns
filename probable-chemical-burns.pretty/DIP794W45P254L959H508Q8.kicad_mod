@@ -32,7 +32,7 @@
 		(uuid "9a955a60-4726-4c5e-aa2d-d4c5fe04d314")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -44,7 +44,7 @@
 		(uuid "37378437-f689-4b49-a579-9eff7a54a441")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -142,6 +142,17 @@
 		(fill yes)
 		(layer "F.Fab")
 		(uuid "39f39f81-9b69-458a-be11-023fab90587c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "01091d5e-380f-4e73-b3b2-1c6e266a58d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(pad "1" thru_hole rect
 		(at -3.97 -3.81)

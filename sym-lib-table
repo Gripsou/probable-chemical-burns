@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "probable-chemical-burns")(type "KiCad")(uri "${KIPRJMOD}/probable-chemical-burns.kicad_sym")(options "")(descr ""))
+  (lib (name "probable-chemical-burns")(type "KiCad")(uri "${KIPRJMOD}/probable-chemical-burns.kicad_sym")(options "")(descr "Project's local symbol library"))
 )

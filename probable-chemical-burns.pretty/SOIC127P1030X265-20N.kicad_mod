@@ -5,14 +5,14 @@
 	(layer "F.Cu")
 	(descr "PG-DSO-20")
 	(tags "Integrated Circuit")
-	(property "Reference" "IC**"
-		(at 0 0 0)
+	(property "Reference" "REF**"
+		(at 0 -7.5 0)
 		(layer "F.SilkS")
 		(uuid "84576b0f-1e71-4652-b3fe-d37226d3e86b")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -23,8 +23,8 @@
 		(uuid "8cf9629a-6d4e-46da-b507-1826e6aadabd")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -35,7 +35,7 @@
 		(uuid "f71dc4df-e6c2-4465-af40-7f44c5e439f1")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -47,7 +47,7 @@
 		(uuid "e1fa3601-6bf7-4e19-97f0-c89dc2285f24")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -199,8 +199,8 @@
 		(uuid "0780b988-10ab-4371-8bba-74d7041acc30")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
