@@ -451,7 +451,8 @@
       "probable-chemical-burns"
     ],
     "pinned_symbol_libs": [
-      "probable-chemical-burns"
+      "probable-chemical-burns",
+      "Diode"
     ]
   },
   "meta": {
