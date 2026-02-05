@@ -882,10 +882,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Elektuur_1:T-BJT-NPN"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_BJT:BCX53"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -893,8 +890,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
-				(at 3.175 3.81 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -902,8 +899,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "T-BJT-NPN"
-				(at 3.175 -3.81 0)
+			(property "Value" "BCX53"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -911,7 +908,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.infineon.com/dgdl/bcx51_bcx52_bcx53.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Ic, 80V Vce, PNP Medium Power Transistor, SOT-89"
 				(at 0 0 0)
 				(effects
 					(font
@@ -920,7 +938,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "ki_keywords" "PNP Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -929,7 +947,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "bipolar junction transistor (BJT): NPN"
+			(property "ki_fp_filters" "SOT?89*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -938,47 +956,69 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=1 2=2 3=3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SPICE"
-				(at -1.905 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-					(hide yes)
-				)
-			)
-			(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "T Q BJT NPN bipolar junction transistor envelope"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "T-BJT-NPN_1_0"
+			(symbol "BCX53_0_1"
 				(polyline
 					(pts
-						(xy 2.1082 -2.3622) (xy 1.651 -1.27) (xy 1.016 -1.905) (xy 2.1082 -2.3622)
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -988,52 +1028,12 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 2.794) (xy 0.381 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.794) (xy 0.381 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
+			)
+			(symbol "BCX53_1_1"
+				(pin input line
 					(at -5.08 0 0)
-					(length 4.826)
+					(length 2.54)
 					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.286)
-					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1049,8 +1049,26 @@
 					)
 				)
 				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 2.54 -5.08 90)
-					(length 2.286)
+					(length 2.54)
 					(name "E"
 						(effects
 							(font
@@ -1064,52 +1082,12 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(symbol "T-BJT-NPN_1_1"
-				(rectangle
-					(start -0.254 2.159)
-					(end 0.381 -2.159)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.016 0)
-					(radius 3.302)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "T-BJT-NPN_1_2"
-				(rectangle
-					(start -0.254 2.159)
-					(end 0.381 -2.159)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Elektuur_1:T-BJT-PNP"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_BJT:BCX56"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1117,8 +1095,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
-				(at 3.175 3.81 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1126,8 +1104,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "T-BJT-PNP"
-				(at 3.175 -3.81 0)
+			(property "Value" "BCX56"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1135,7 +1113,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/BCP56_BCX56_BC56PA.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Ic, 80V Vce, NPN Medium Power Transistor, SOT-89"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1144,7 +1143,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "ki_keywords" "NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1153,7 +1152,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "bipolar junction transistor (BJT): PNP"
+			(property "ki_fp_filters" "SOT?89*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1162,47 +1161,71 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=1 2=2 3=3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SPICE"
-				(at -1.905 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-					(hide yes)
-				)
-			)
-			(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "T Q BJT PNP bipolar junction transistor envelope"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "T-BJT-PNP_1_0"
+			(symbol "BCX56_0_1"
 				(polyline
 					(pts
-						(xy 0.9398 1.1938) (xy 2.032 1.651) (xy 1.397 2.286) (xy 0.9398 1.1938)
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BCX56_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -1212,34 +1235,28 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 2.794) (xy 0.381 0.635)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.794) (xy 0.381 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 4.826)
-					(name "B"
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1255,8 +1272,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.286)
+					(at 2.54 -5.08 90)
+					(length 2.54)
 					(name "E"
 						(effects
 							(font
@@ -1270,61 +1287,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.286)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "T-BJT-PNP_1_1"
-				(rectangle
-					(start -0.254 2.159)
-					(end 0.381 -2.159)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.016 0)
-					(radius 3.302)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "T-BJT-PNP_1_2"
-				(rectangle
-					(start -0.254 2.159)
-					(end 0.381 -2.159)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -2235,12 +2197,520 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "probable-chemical-burns:SFH617A-2"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.25 1.25)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SFH617A-2"
+				(at -7.62 -6.35 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "probable-chemical-burns:DIP762W50P254L458H480Q4"
+				(at 25.4 2.54 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?83740"
+				(at 25.4 7.62 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Optoisolator Transistor Output 5300Vrms 1 Channel 4-DIP"
+				(at 25.4 5.08 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay Semiconductor"
+				(at 25.4 0 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "SFH617A-2"
+				(at 25.4 -2.54 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "DIP-4 Vishay Semiconductor"
+				(at 25.4 -5.08 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Height" "4.3"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "782-SFH617A-2"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SFH617A-2?qs=xCMk%252BIHWTZMbqxyyVmR2fg%3D%3D"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "SFH617A-2"
+				(at 16.51 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/sfh617a-2/vishay?region=nac"
+				(at 16.51 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "probable-chemical-burns.spice\\BJT_10mA\\BJT_10mA.lib"
+				(at 25.4 -7.62 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "BJT_10mA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=K 3=E 4=C"
+				(at 25.4 -10.16 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.5 1.5)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Optoisolator DIP-4 Vishay"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SFH617A-2_0_0"
+				(rectangle
+					(start 2.1655 2.032)
+					(end 2.921 -2.035)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SFH617A-2_1_0"
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -3.81 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -3.81 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -7.62 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.7955 1.2642) (xy -3.81 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.5255 -1.2758) (xy -5.0655 -1.2758)
+					)
+					(stroke
+						(width 0.5)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.2715 -0.5138) (xy -0.2395 -1.2758)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.7635 1.0102) (xy 0.2685 0.2482)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.1125 -0.8948) (xy 0.7765 -1.7838) (xy -0.4935 -1.5298) (xy -0.1125 -0.8948)
+					)
+					(stroke
+						(width 0.15)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.3955 0.6292) (xy 1.2845 -0.2598) (xy 0.0145 -0.0058) (xy 0.3955 0.6292)
+					)
+					(stroke
+						(width 0.15)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 -1.524) (xy 4.064 -2.286) (xy 5.08 -2.54) (xy 4.826 -1.524)
+					)
+					(stroke
+						(width 0.15)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SFH617A-2_1_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.0655 1.2642) (xy -2.5255 1.2642) (xy -3.7955 -1.2758) (xy -5.0655 1.2642)
+					)
+					(stroke
+						(width 0.2)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(text "A"
+					(at -5.08 3.048 0)
+					(effects
+						(font
+							(size 1.25 1.25)
+						)
+						(justify bottom)
+					)
+				)
+				(text "C"
+					(at -5.08 -4.318 0)
+					(effects
+						(font
+							(size 1.25 1.25)
+						)
+						(justify bottom)
+					)
+				)
+				(text "C"
+					(at 3.81 2.794 0)
+					(effects
+						(font
+							(size 1.25 1.25)
+						)
+						(justify bottom)
+					)
+				)
+				(text "E"
+					(at 3.81 -2.794 0)
+					(effects
+						(font
+							(size 1.25 1.25)
+						)
+						(justify top)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "probable-chemical-burns:UCC27324x"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 5.08 8.89 0)
+				(at 5.08 6.35 0)
 				(effects
 					(font
 						(size 1.25 1.25)
@@ -2249,7 +2719,7 @@
 				)
 			)
 			(property "Value" "UCC27324x"
-				(at 2.54 -6.35 0)
+				(at 2.54 -8.89 0)
 				(effects
 					(font
 						(size 1 1)
@@ -2334,8 +2804,8 @@
 			)
 			(symbol "UCC27324x_1_0"
 				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -5.08)
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
 					(stroke
 						(width 0)
 						(type solid)
@@ -2344,8 +2814,80 @@
 						(type background)
 					)
 				)
+				(polyline
+					(pts
+						(xy -6.35 2.54) (xy -5.842 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -2.54) (xy -5.842 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 2.54) (xy -3.048 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -2.54) (xy -3.048 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 2.54) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -2.54) (xy 5.842 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin input line
-					(at -7.62 2.54 0)
+					(at -8.89 2.54 0)
 					(length 2.54)
 					(name "IN_{A}"
 						(effects
@@ -2363,7 +2905,7 @@
 					)
 				)
 				(pin input line
-					(at -7.62 0 0)
+					(at -8.89 -2.54 0)
 					(length 2.54)
 					(name "IN_{B}"
 						(effects
@@ -2381,7 +2923,7 @@
 					)
 				)
 				(pin no_connect line
-					(at -5.08 -5.08 0)
+					(at -6.35 -7.62 0)
 					(length 2.54)
 					(hide yes)
 					(name "N/A"
@@ -2400,7 +2942,7 @@
 					)
 				)
 				(pin no_connect line
-					(at -5.08 -5.08 0)
+					(at -6.35 -7.62 0)
 					(length 2.54)
 					(hide yes)
 					(name "N/A"
@@ -2437,7 +2979,7 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at 0 -10.16 90)
 					(length 2.54)
 					(name "G_{ND}"
 						(effects
@@ -2455,9 +2997,9 @@
 					)
 				)
 				(pin output line
-					(at 7.62 2.54 180)
+					(at 8.89 2.54 180)
 					(length 2.54)
-					(name "OUTA"
+					(name "OUT_{A}"
 						(effects
 							(font
 								(size 1 1)
@@ -2473,9 +3015,9 @@
 					)
 				)
 				(pin output line
-					(at 7.62 0 180)
+					(at 8.89 -2.54 180)
 					(length 2.54)
-					(name "OUTB"
+					(name "OUT_{B}"
 						(effects
 							(font
 								(size 1 1)
@@ -2488,6 +3030,32 @@
 								(size 1 1)
 							)
 						)
+					)
+				)
+			)
+			(symbol "UCC27324x_1_1"
+				(polyline
+					(pts
+						(xy -0.762 3.81) (xy -0.762 1.27) (xy 1.778 2.54) (xy -0.762 3.81)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.27) (xy -0.762 -3.81) (xy 1.778 -2.54) (xy -0.762 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -2519,6 +3087,12 @@
 		(uuid "191af73c-bd39-4998-97cc-125884203fc0")
 	)
 	(junction
+		(at 101.6 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29358461-f26f-49c7-88ba-b75e9019eafe")
+	)
+	(junction
 		(at 63.5 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2529,6 +3103,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33f8675f-e791-45ca-a06a-42f04f86aaa5")
+	)
+	(junction
+		(at 101.6 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40159cfc-6fc1-48f3-ab7b-8c82be4a0d9b")
+	)
+	(junction
+		(at 50.8 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cbfc3fd-3006-476b-ae69-f4c36fafcc70")
 	)
 	(junction
 		(at 203.2 101.6)
@@ -2632,7 +3218,27 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 102.87) (xy 215.9 114.3)
+			(xy 66.04 173.99) (xy 63.5 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04fcdfcf-fc5f-4b29-8f02-560c98ae8153")
+	)
+	(wire
+		(pts
+			(xy 48.26 165.1) (xy 50.8 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e1d8c7-2580-4329-a3cc-e500d4869cf1")
+	)
+	(wire
+		(pts
+			(xy 217.17 104.14) (xy 217.17 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2702,6 +3308,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 165.1) (xy 50.8 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ddd50c4-0ef5-455e-927a-95f96b0d4421")
+	)
+	(wire
+		(pts
 			(xy 119.38 133.35) (xy 114.3 133.35)
 		)
 		(stroke
@@ -2709,6 +3325,16 @@
 			(type default)
 		)
 		(uuid "1e494795-7b1d-40ff-946e-a1615b5e87ed")
+	)
+	(wire
+		(pts
+			(xy 50.8 177.8) (xy 50.8 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "211b46e2-90aa-40bf-b2d5-4fe83059affd")
 	)
 	(wire
 		(pts
@@ -2822,7 +3448,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 88.9) (xy 215.9 88.9)
+			(xy 203.2 88.9) (xy 217.17 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2839,6 +3465,16 @@
 			(type default)
 		)
 		(uuid "3e45ca11-9ced-49de-ae03-0a8bca059df8")
+	)
+	(wire
+		(pts
+			(xy 101.6 177.8) (xy 101.6 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f287f6b-7d1a-4136-a7ec-3ae0585e6ead")
 	)
 	(wire
 		(pts
@@ -2862,7 +3498,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 100.33) (xy 241.3 100.33)
+			(xy 237.49 99.06) (xy 241.3 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2872,7 +3508,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 110.49) (xy 228.6 114.3)
+			(xy 228.6 111.76) (xy 228.6 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2882,17 +3518,17 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 102.87) (xy 215.9 102.87)
+			(xy 66.04 168.91) (xy 63.5 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b0011f6-4208-49b9-8c09-fcbd0758a58d")
+		(uuid "50feff4e-ba00-4186-9c82-9b0bc866dd75")
 	)
 	(wire
 		(pts
-			(xy 215.9 100.33) (xy 215.9 88.9)
+			(xy 217.17 99.06) (xy 217.17 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2912,7 +3548,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 92.71) (xy 228.6 76.2)
+			(xy 101.6 177.8) (xy 88.9 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58619b5a-febd-4808-b5b0-01833c897b4d")
+	)
+	(wire
+		(pts
+			(xy 228.6 91.44) (xy 228.6 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2942,6 +3588,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 173.99) (xy 88.9 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c3bf53-44fb-4ce6-9146-2be2dc94f9e9")
+	)
+	(wire
+		(pts
 			(xy 165.1 109.22) (xy 165.1 114.3)
 		)
 		(stroke
@@ -2962,6 +3618,26 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 165.1) (xy 101.6 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a864e7e-3202-4676-a214-72ce311aee1f")
+	)
+	(wire
+		(pts
+			(xy 63.5 177.8) (xy 50.8 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad5118f-33e7-45b8-bd62-4d80c4fd764c")
+	)
+	(wire
+		(pts
 			(xy 177.8 101.6) (xy 177.8 105.41)
 		)
 		(stroke
@@ -2972,7 +3648,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 114.3) (xy 215.9 114.3)
+			(xy 203.2 114.3) (xy 217.17 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3042,6 +3718,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 104.14) (xy 241.3 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7fc5b5-f0ac-402f-9113-0791910c5f63")
+	)
+	(wire
+		(pts
 			(xy 111.76 76.2) (xy 114.3 76.2)
 		)
 		(stroke
@@ -3049,6 +3735,16 @@
 			(type default)
 		)
 		(uuid "81d5e0f5-6c64-4ef0-937d-f0441e6505c4")
+	)
+	(wire
+		(pts
+			(xy 50.8 165.1) (xy 50.8 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82759b9c-be0b-43d7-afe5-d32daa65778a")
 	)
 	(wire
 		(pts
@@ -3132,6 +3828,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 165.1) (xy 63.5 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e65eeb-c653-4198-9edb-ae0a34e96555")
+	)
+	(wire
+		(pts
 			(xy 63.5 48.26) (xy 63.5 50.8)
 		)
 		(stroke
@@ -3152,16 +3858,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 102.87) (xy 241.3 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "987eaa43-52c3-4ced-bf1e-50c08dac1013")
-	)
-	(wire
-		(pts
 			(xy 203.2 91.44) (xy 203.2 88.9)
 		)
 		(stroke
@@ -3169,6 +3865,16 @@
 			(type default)
 		)
 		(uuid "9c2916c9-2014-4f3e-8645-e340b884ea0a")
+	)
+	(wire
+		(pts
+			(xy 88.9 168.91) (xy 88.9 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cecb2a2-150c-42df-b729-24f2ac6b7db4")
 	)
 	(wire
 		(pts
@@ -3272,6 +3978,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 165.1) (xy 101.6 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa58aadf-9776-4b02-b37b-3e7d2f4a9261")
+	)
+	(wire
+		(pts
 			(xy 254 76.2) (xy 241.3 76.2)
 		)
 		(stroke
@@ -3322,6 +4038,26 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 165.1) (xy 107.95 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c055cd-cfde-4777-ae13-dfacbf832cf5")
+	)
+	(wire
+		(pts
+			(xy 101.6 175.26) (xy 101.6 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9330e43-7108-44ef-9fb9-8c8bf65e1dc7")
+	)
+	(wire
+		(pts
 			(xy 76.2 50.8) (xy 63.5 50.8)
 		)
 		(stroke
@@ -3329,6 +4065,16 @@
 			(type default)
 		)
 		(uuid "bf26421c-329e-4c99-9312-ee41379703eb")
+	)
+	(wire
+		(pts
+			(xy 63.5 173.99) (xy 63.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06b404e-9ab7-482a-9b46-e14bd87379ea")
 	)
 	(wire
 		(pts
@@ -3362,6 +4108,36 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 168.91) (xy 88.9 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce69a12c-a54c-4a8a-be6c-0f0d26a734e0")
+	)
+	(wire
+		(pts
+			(xy 63.5 165.1) (xy 63.5 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d091fe70-58d3-402a-bcde-f1c425b99c7b")
+	)
+	(wire
+		(pts
+			(xy 88.9 177.8) (xy 88.9 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1ae1928-c25c-4218-b694-3728b6df5300")
+	)
+	(wire
+		(pts
 			(xy 139.7 76.2) (xy 127 76.2)
 		)
 		(stroke
@@ -3369,6 +4145,16 @@
 			(type default)
 		)
 		(uuid "d61e32ce-f77e-460e-95e3-2af1d9556b14")
+	)
+	(wire
+		(pts
+			(xy 40.64 165.1) (xy 38.1 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dace69e0-1d34-4d79-b19b-856e1aae9dd8")
 	)
 	(wire
 		(pts
@@ -3402,7 +4188,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 100.33) (xy 215.9 100.33)
+			(xy 219.71 99.06) (xy 217.17 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3442,6 +4228,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 165.1) (xy 38.1 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3898c50-3dab-4a00-a8ce-37ee591459fc")
+	)
+	(wire
+		(pts
 			(xy 241.3 76.2) (xy 241.3 78.74)
 		)
 		(stroke
@@ -3469,6 +4265,16 @@
 			(type default)
 		)
 		(uuid "e92cc6b8-88ed-45fc-85de-260333aa2369")
+	)
+	(wire
+		(pts
+			(xy 219.71 104.14) (xy 217.17 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb98a1eb-4701-4ac3-bb16-21a59fa946cd")
 	)
 	(wire
 		(pts
@@ -7909,7 +8715,7 @@
 	)
 	(hierarchical_label "HG"
 		(shape output)
-		(at 241.3 100.33 0)
+		(at 241.3 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7920,7 +8726,7 @@
 	)
 	(hierarchical_label "LG"
 		(shape output)
-		(at 241.3 102.87 0)
+		(at 241.3 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7951,6 +8757,17 @@
 		)
 		(uuid "921f2bb9-2353-4b2c-a4a4-3ef3d2f0faf5")
 	)
+	(hierarchical_label "V_{REG}"
+		(shape output)
+		(at 107.95 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b93f582d-d29b-46b9-b9f7-3ef541eaf2da")
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 184.15 88.9 90)
@@ -7968,7 +8785,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "430 Ω 1%"
 			(at 184.15 91.44 90)
 			(effects
 				(font
@@ -8100,7 +8917,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10 Ω"
 			(at 120.65 129.54 90)
 			(effects
 				(font
@@ -8217,17 +9034,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Elektuur_1:T-BJT-PNP")
+		(lib_id "Transistor_BJT:BCX53")
 		(at 124.46 82.55 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1c9c6b89-f230-4dd1-9397-fc94a1bfd42a")
 		(property "Reference" "T203"
-			(at 130.81 81.2799 0)
+			(at 129.54 83.8201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8235,8 +9052,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "T-BJT-PNP"
-			(at 130.81 83.8199 0)
+		(property "Value" "BCX53"
+			(at 129.54 81.2801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8244,53 +9061,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 129.54 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/bcx51_bcx52_bcx53.pdf"
 			(at 124.46 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 124.46 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "bipolar junction transistor (BJT): PNP"
-			(at 124.46 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 124.46 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 122.555 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
+		(property "Description" "1A Ic, 80V Vce, PNP Medium Power Transistor, SOT-89"
 			(at 124.46 82.55 0)
 			(effects
 				(font
@@ -8397,19 +9189,21 @@
 		(dnp no)
 		(uuid "1edc3b55-b96e-4e61-b686-7d32c97b8fbd")
 		(property "Reference" "R206"
-			(at 187.96 95.25 90)
+			(at 191.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 193.04 95.25 90)
+		(property "Value" "1 kΩ 1%"
+			(at 191.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -8526,7 +9320,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Elektuur_1:T-BJT-NPN")
+		(lib_id "Transistor_BJT:BCX56")
 		(at 124.46 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8536,7 +9330,7 @@
 		(fields_autoplaced yes)
 		(uuid "26dca7d3-6df6-4a42-b824-2d88ee55db08")
 		(property "Reference" "T204"
-			(at 130.81 119.3799 0)
+			(at 129.54 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8544,8 +9338,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "T-BJT-NPN"
-			(at 130.81 121.9199 0)
+		(property "Value" "BCX56"
+			(at 129.54 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8553,53 +9347,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 129.54 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/BCP56_BCX56_BC56PA.pdf"
 			(at 124.46 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 124.46 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "bipolar junction transistor (BJT): NPN"
-			(at 124.46 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 124.46 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 122.555 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
+		(property "Description" "1A Ic, 80V Vce, NPN Medium Power Transistor, SOT-89"
 			(at 124.46 120.65 0)
 			(effects
 				(font
@@ -8714,6 +9483,73 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 50.8 171.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f953bac-35ad-495d-9e78-b0038cd3a4f6")
+		(property "Reference" "R210"
+			(at 48.26 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "820 Ω"
+			(at 53.34 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.578 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f76f389f-7d48-40bd-85d9-98efa795604d")
+		)
+		(pin "2"
+			(uuid "f072666e-4f62-4c88-9f6d-f17626d6d8e9")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "R210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 107.95 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8729,7 +9565,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10 Ω"
 			(at 107.95 78.74 90)
 			(effects
 				(font
@@ -8982,6 +9818,276 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 38.1 171.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64548ead-cabc-4722-9e36-e1aac9a97b47")
+		(property "Reference" "R212"
+			(at 35.56 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560 Ω"
+			(at 40.64 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.878 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4ef3569-0c78-4cdc-ab54-8e28ae092fcb")
+		)
+		(pin "2"
+			(uuid "d0a6614e-fef0-45c3-9479-6d56e1b39131")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "R212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "probable-chemical-burns:SFH617A-2")
+		(at 76.2 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74d769e2-43de-4db1-9962-fd6cd76a9c17")
+		(property "Reference" "U202"
+			(at 76.2 161.29 0)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+			)
+		)
+		(property "Value" "SFH617A-2"
+			(at 76.2 163.83 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "probable-chemical-burns:DIP762W50P254L458H480Q4"
+			(at 101.6 168.91 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/doc?83740"
+			(at 101.6 163.83 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Optoisolator Transistor Output 5300Vrms 1 Channel 4-DIP"
+			(at 101.6 166.37 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Semiconductor"
+			(at 101.6 171.45 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SFH617A-2"
+			(at 101.6 173.99 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "DIP-4 Vishay Semiconductor"
+			(at 101.6 176.53 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.3"
+			(at 92.71 566.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "782-SFH617A-2"
+			(at 92.71 866.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SFH617A-2?qs=xCMk%252BIHWTZMbqxyyVmR2fg%3D%3D"
+			(at 92.71 966.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "SFH617A-2"
+			(at 92.71 1066.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/sfh617a-2/vishay?region=nac"
+			(at 92.71 1166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "probable-chemical-burns.spice\\BJT_10mA\\BJT_10mA.lib"
+			(at 101.6 179.07 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "BJT_10mA"
+			(at 76.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 76.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=K 3=E 4=C"
+			(at 101.6 181.61 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5059205f-4350-4682-9cb2-ca141eada004")
+		)
+		(pin "2"
+			(uuid "a28ec7f9-d764-4c6f-a7ac-4c4e79d13e16")
+		)
+		(pin "4"
+			(uuid "77f85bf6-6077-4427-b0a8-cda8d2d9f900")
+		)
+		(pin "3"
+			(uuid "7fb08722-da12-4a7b-af8b-55c012364d80")
+		)
+		(instances
+			(project ""
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "U202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 107.95 127 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8997,7 +10103,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10 Ω"
 			(at 107.95 129.54 90)
 			(effects
 				(font
@@ -9066,7 +10172,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "47 uF / 35 V"
 			(at 257.81 82.9309 0)
 			(effects
 				(font
@@ -9200,7 +10306,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "430 Ω 1%"
 			(at 184.15 116.84 90)
 			(effects
 				(font
@@ -9245,6 +10351,72 @@
 			(project "Infineon.EVAL-2HS01G-300W-1"
 				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
 					(reference "R207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 101.6 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89b6e38f-8749-468b-8730-94b40a6f6879")
+		(property "Reference" "#PWR0211"
+			(at 101.6 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 101.473 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 101.6 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e231967b-30bb-48d4-bdb9-76f182d86851")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -9322,8 +10494,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 101.6 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "969ccf0d-1a39-442a-8116-b96aa1e0b96a")
+		(property "Reference" "C206"
+			(at 105.41 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 nF"
+			(at 105.41 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.5652 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 101.6 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e5951eb6-536e-4857-9203-0488ceaedf5f")
+		)
+		(pin "1"
+			(uuid "e54d8274-0cfc-482d-9934-faab8c7983f7")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "C206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "probable-chemical-burns:UCC27324x")
-		(at 228.6 102.87 0)
+		(at 228.6 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9332,7 +10574,7 @@
 		(fields_autoplaced yes)
 		(uuid "97dcb8e1-196c-4ff6-ba94-214b7f93fa74")
 		(property "Reference" "U201"
-			(at 230.5576 90.17 0)
+			(at 230.5576 88.9 0)
 			(effects
 				(font
 					(size 1.25 1.25)
@@ -9341,7 +10583,7 @@
 			)
 		)
 		(property "Value" "UCC27324x"
-			(at 230.5576 92.71 0)
+			(at 230.5576 91.44 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9350,7 +10592,7 @@
 			)
 		)
 		(property "Footprint" "probable-chemical-burns:SOIC127P599X175-8N"
-			(at 254 100.33 0)
+			(at 254 99.06 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9361,7 +10603,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27324.pdf"
-			(at 254 95.25 0)
+			(at 254 93.98 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9372,7 +10614,7 @@
 			)
 		)
 		(property "Description" "Non-inverting 4-A/4-A dual-channel low side gate driver"
-			(at 254 97.79 0)
+			(at 254 96.52 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9383,7 +10625,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 254 102.87 0)
+			(at 254 101.6 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9394,7 +10636,7 @@
 			)
 		)
 		(property "MPN" "UCC27324P (PDIP) | UCC27324DRG4 (SOIC-8) | UCC27324DGNRG4 (HVSSOP-8)"
-			(at 254 105.41 0)
+			(at 254 104.14 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9405,7 +10647,7 @@
 			)
 		)
 		(property "Package" "PDIP-8 | SOIC-8 | HVSSOP-8"
-			(at 254 107.95 0)
+			(at 254 106.68 0)
 			(show_name yes)
 			(effects
 				(font
@@ -9467,7 +10709,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100 nF"
 			(at 245.11 83.8199 0)
 			(effects
 				(font
@@ -9528,19 +10770,21 @@
 		(dnp no)
 		(uuid "ac1ac06c-feff-4927-95ca-d211d0058bb6")
 		(property "Reference" "R208"
-			(at 187.96 107.95 90)
+			(at 191.77 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 193.04 107.95 90)
+		(property "Value" "1 kΩ 1%"
+			(at 192.024 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -9866,6 +11110,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 57.15 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1fc1b82-be92-4f15-a5c3-23de44886ce3")
+		(property "Reference" "R209"
+			(at 57.15 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 57.15 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 166.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9c0bccc-b7cb-49db-a192-550882d6c396")
+		)
+		(pin "2"
+			(uuid "314dd47c-7c29-4f31-8298-46dcd815fe1f")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "R209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:BZV55C5V1")
 		(at 203.2 107.95 90)
 		(unit 1)
@@ -10132,7 +11443,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Elektuur_1:T-BJT-NPN")
+		(lib_id "Transistor_BJT:BCX56")
 		(at 124.46 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10142,7 +11453,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6d5c577-f2a9-4077-8b9d-aab13bb9a263")
 		(property "Reference" "T202"
-			(at 130.81 68.5799 0)
+			(at 129.54 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10150,8 +11461,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "T-BJT-NPN"
-			(at 130.81 71.1199 0)
+		(property "Value" "BCX56"
+			(at 129.54 71.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10159,53 +11470,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 129.54 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/BCP56_BCX56_BC56PA.pdf"
 			(at 124.46 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "bipolar junction transistor (BJT): NPN"
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 122.555 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
+		(property "Description" "1A Ic, 80V Vce, NPN Medium Power Transistor, SOT-89"
 			(at 124.46 69.85 0)
 			(effects
 				(font
@@ -10298,80 +11584,122 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Elektuur_1:T-BJT-PNP")
-		(at 124.46 133.35 0)
+		(lib_id "Device:R")
+		(at 44.45 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec3a9c88-1e39-4a28-8523-84992bf6d37f")
-		(property "Reference" "T205"
-			(at 130.81 132.0799 0)
+		(uuid "ebdd0d88-b833-4b5c-a851-40ec1cb8b55b")
+		(property "Reference" "R211"
+			(at 44.45 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "T-BJT-PNP"
-			(at 130.81 134.6199 0)
+		(property "Value" "510 Ω"
+			(at 44.45 167.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
+			(at 44.45 166.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eee5df12-6c6e-4397-a835-7e43f2500f8c")
+		)
+		(pin "2"
+			(uuid "c42eb8b4-fc62-48c9-b2c1-86ef2b0fdf65")
+		)
+		(instances
+			(project "Infineon.EVAL-2HS01G-300W-1"
+				(path "/24a80974-3bf5-4964-b47f-ee6ba634a8bf/bc6888c2-8e3c-4cd8-aaa5-7b24f94289a7"
+					(reference "R211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BCX53")
+		(at 124.46 133.35 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec3a9c88-1e39-4a28-8523-84992bf6d37f")
+		(property "Reference" "T205"
+			(at 129.54 134.6201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BCX53"
+			(at 129.54 132.0801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 129.54 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/bcx51_bcx52_bcx53.pdf"
 			(at 124.46 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "bipolar junction transistor (BJT): PNP"
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 122.555 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"Q\" model=\"Q\" lib=\"semiconductor.lib\""
+		(property "Description" "1A Ic, 80V Vce, PNP Medium Power Transistor, SOT-89"
 			(at 124.46 133.35 0)
 			(effects
 				(font
@@ -10501,7 +11829,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10 Ω"
 			(at 120.65 78.74 90)
 			(effects
 				(font
